@@ -135,7 +135,7 @@ int main()
         {
         case '1':
         {
-            cout << "Enter & word: ";
+            cout << "Enter a word: ";
             string word;
             cin >> word;
             obj.insert(word);
