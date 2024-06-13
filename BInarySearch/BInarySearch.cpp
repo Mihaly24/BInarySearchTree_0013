@@ -47,7 +47,13 @@ public:
         {
             parent->leftchild = newNode; // make the left point to new node
         }
+        else if (element > parent->info)
+        {
+            parent->rightchild = newNode;
+        }
     }
+
+
 };
 
 int main()
