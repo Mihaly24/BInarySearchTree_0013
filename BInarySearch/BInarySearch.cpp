@@ -43,6 +43,10 @@ public:
             ROOT = newNode;
             return; //exit
         }
+        if (element < parent->info) //if the data is less than the parent
+        {
+            parent->leftchild = newNode; // make the left point to new node
+        }
     }
 };
 
