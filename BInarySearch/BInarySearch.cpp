@@ -31,10 +31,14 @@ public:
     {
         Node* newNode = new Node(element, nullptr, nullptr); // allocate memory for new node
         newNode->info = element; //assign value to data field
-        newNode->leftchild = nullptr;
-        newNode->rightchild = nullptr;
+        newNode->leftchild = nullptr; // make left null
+        newNode->rightchild = nullptr; // make right null
 
+        Node* parent = nullptr;
+        Node* currentNode = nullptr;
+        search(element, parent, currentNode); // locate the parent
 
+       
     }
 };
 
