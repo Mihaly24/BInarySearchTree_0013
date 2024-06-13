@@ -24,12 +24,17 @@ public:
     Node* ROOT;
 
     BinaryTree() {
-        ROOT = nullptr;
+        ROOT = nullptr; // initializing root to null
     }
 
     void insert(string element)
     {
-        Node* newNode = new Node(element, nullptr, nullptr);
+        Node* newNode = new Node(element, nullptr, nullptr); // allocate memory for new node
+        newNode->info = element; //assign value to data field
+        newNode->leftchild = nullptr;
+        newNode->rightchild = nullptr;
+
+
     }
 };
 
