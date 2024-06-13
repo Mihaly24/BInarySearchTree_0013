@@ -38,7 +38,11 @@ public:
         Node* currentNode = nullptr;
         search(element, parent, currentNode); // locate the parent
 
-       
+        if (parent == nullptr)
+        {
+            ROOT = newNode;
+            return; //exit
+        }
     }
 };
 
